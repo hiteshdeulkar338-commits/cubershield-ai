@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShield AI — Personal Cybersecurity Assistant</title>
+    <meta name="description" content="Detect Threats. Protect Your Digital World.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="shield-check"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>CyberShield AI</h1>
+                    <span class="tagline">Personal Security Assistant</span>
+                </div>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-item active" data-page="dashboard">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#url-scanner" class="nav-item" data-page="url-scanner">
+                <i data-lucide="link"></i>
+                <span>URL Scanner</span>
+            </a>
+            <a href="#phishing-detector" class="nav-item" data-page="phishing-detector">
+                <i data-lucide="mail-warning"></i>
+                <span>Phishing Detector</span>
+            </a>
+            <a href="#scam-analyzer" class="nav-item" data-page="scam-analyzer">
+                <i data-lucide="message-square-warning"></i>
+                <span>Scam Analyzer</span>
+            </a>
+            <a href="#password-security" class="nav-item" data-page="password-security">
+                <i data-lucide="key-round"></i>
+                <span>Password Security</span>
+            </a>
+            <a href="#security-score" class="nav-item" data-page="security-score">
+                <i data-lucide="gauge"></i>
+                <span>Security Score</span>
+            </a>
+            <a href="#education" class="nav-item" data-page="education">
+                <i data-lucide="graduation-cap"></i>
+                <span>Education</span>
+            </a>
+            <a href="#scan-history" class="nav-item" data-page="scan-history">
+                <i data-lucide="history"></i>
+                <span>Scan History</span>
+            </a>
+            <a href="#settings" class="nav-item" data-page="settings">
+                <i data-lucide="settings"></i>
+                <span>Settings</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="system-status">
+                <div class="status-dot online"></div>
+                <span>System Operational</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="top-nav-left">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div class="breadcrumb" id="breadcrumb">
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="top-nav-right">
+                <div class="system-badge">
+                    <div class="status-dot online"></div>
+                    <span>Online</span>
+                </div>
+                <button class="nav-icon-btn" id="themeToggle" aria-label="Toggle theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <button class="nav-icon-btn notification-btn" id="notificationsBtn" aria-label="Notifications">
+                    <i data-lucide="bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="user-profile">
+                    <div class="avatar">
+                        <i data-lucide="user"></i>
+                    </div>
+                    <span class="user-name">Security Analyst</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Container -->
+        <div class="page-container" id="pageContainer">
+            <!-- Pages loaded dynamically -->
+        </div>
+    </main>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/api.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/pages/dashboard.js"></script>
+    <script src="/js/pages/url-scanner.js"></script>
+    <script src="/js/pages/phishing-detector.js"></script>
+    <script src="/js/pages/scam-analyzer.js"></script>
+    <script src="/js/pages/password-security.js"></script>
+    <script src="/js/pages/security-score.js"></script>
+    <script src="/js/pages/education.js"></script>
+    <script src="/js/pages/scan-history.js"></script>
+    <script src="/js/pages/settings.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
